@@ -10,7 +10,7 @@ def hSnmp():
 
     snmp = SNMP("192.168.1.200", version=1 , community="public")
     current = snmp.get(".1.3.6.1.4.1.19011.1.3.5.1.3.1.0")
-    print(current)
+    print(current/1000)
     return current/1000
 
 
